@@ -1,0 +1,11 @@
+fork() – Creates a child process.
+exec() – Executes the given Linux command.
+wait() – Makes the parent process wait for the child process.
+getpid() – Returns the Process ID.
+getppid() – Returns the Parent Process ID.
+
+uname	 - Displays operating system and kernel information
+lscpu	 -  Displays CPU architecture and processor information
+lsblk	 -  Displays storage devices and block devices
+ps	  -   Displays information about running processes
+top   - 	Displays real-time process and system resource usage
