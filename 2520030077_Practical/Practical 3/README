@@ -1,0 +1,16 @@
+fork() – Creates a child process.
+exec() – Executes the Linux command in the child process.
+wait() – Makes the parent wait for the child to finish.
+getpid() – Returns the process ID.
+getppid() – Returns the parent process ID.
+uname -a → Shows Linux and kernel information.
+lscpu → Shows CPU information.
+lsblk → Shows storage device information.
+ps → Shows running processes.
+top → Shows real-time system activity.
+
+CPU – The OS manages CPU time using processes and scheduling.
+Memory – The OS provides virtual memory to each process.
+Storage – The OS manages storage through files and directories.
+I/O – The OS uses device drivers to communicate with hardware.
+The OS acts as a bridge between applications and hardware.
