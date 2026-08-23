@@ -1,0 +1,22 @@
+System Calls Used
+
+- open() – Opens the source and destination files.
+- read() – Reads data from the source file.
+- write() – Writes data into the destination file.
+- close() – Closes the source and destination files.
+- buf[100] – Temporarily stores the file data.
+
+User Space and Kernel Space
+
+- The program runs in user space.
+- When a system call is made, control moves from user space to kernel space.
+- The kernel performs the requested file operation.
+- Control then returns to user space.
+- This happens for open(), read(), write(), and close().
+
+strace
+
+- strace is used to trace system calls made by a Linux program.
+- Command used:
+  strace cat sample.txt
+- cat reads and displays the contents of sample.txt.
