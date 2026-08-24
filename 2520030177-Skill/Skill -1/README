@@ -37,9 +37,7 @@ gcc prac1.c -o prac1
 Run the compiled program using:
 ./process
 
-
-
-What was acheived?
+acheived:
 
 1.Install Linux VM 
 Set up a Linux virtual machine to provide the environment for OS development.
