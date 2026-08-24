@@ -1,4 +1,4 @@
- Question 2 –> Part A: Interactive Shell Loop
+ A: Interactive Shell Loop
 Objective:
 To create a basic interactive shell loop that displays a command prompt, accepts user input, handles exit conditions, and maintains continuous interaction with the user.
 
@@ -39,9 +39,7 @@ The shell should continue running for normal input and terminate when the exit c
 Learning Outcome:
 After completing this experiment, we understand how an interactive shell maintains a continuous loop, displays a prompt, accepts user input, processes commands, and handles termination conditions.
 
-
-
-Part B: Keyboard Input Handling:
+B: Keyboard Input Handling:
  Objective:
 To capture keyboard input character by character, handle Backspace and Enter keys, manage an input buffer, support multi-character commands, and test user interaction.
 Description:
