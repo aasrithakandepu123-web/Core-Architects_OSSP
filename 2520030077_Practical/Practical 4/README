@@ -1,0 +1,28 @@
+
+Description
+
+This program demonstrates the creation of multiple child processes using the fork() system call.
+The parent process creates three child processes.
+Each child process prints its process ID, waits for a different amount of time using sleep(), and then terminates.
+The parent process uses wait() to wait for any one child process to complete.
+The parent then uses waitpid() to wait for a specific child process to complete.
+Finally, the parent waits for the remaining child process and terminates after all children have completed.
+
+System Calls Used
+
+fork() is used to create a new child process.
+wait() is used by the parent to wait for any child process to complete.
+waitpid() is used by the parent to wait for a specific child process.
+sleep() is used to create different execution times for the child processes.
+exit() is used to terminate the child process.
+getpid() is used to obtain the process ID of the child.
+
+Comparison of wait() and waitpid()
+
+wait() waits for any one child process that has completed.
+waitpid() waits for a particular child process whose process ID is specified.
+wait() is useful when the parent does not need to select a specific child.
+waitpid() is useful when the parent needs to synchronize with a particular child.
+
+
+
