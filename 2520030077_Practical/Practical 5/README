@@ -1,0 +1,40 @@
+An anonymous pipe is used for communication between the parent and child processes. The parent process acts as the producer and writes data into the pipe. The child process acts as the consumer and reads the data from the pipe.
+
+System Calls Used
+pipe() – Creates an anonymous pipe for communication.
+fork() – Creates a child process.
+read() – Reads data from the pipe.
+write() – Writes data into the pipe.
+close() – Closes the unused pipe ends.
+clock() – Measures the communication time.
+
+Working
+Create a pipe using pipe().
+Create a child process using fork().
+The parent process produces values 10, 20, 30, 40 and 50.
+The parent writes the values into the pipe.
+The child reads the values from the pipe.
+The child displays the consumed values.
+The communication time is calculated and displayed.
+
+The program uses two child processes. The first child executes ls -l and sends its output through the pipe. The second child receives the output from the pipe and executes grep ".c" to display the files containing .c.
+
+System Calls Used
+pipe() – Creates a pipe for communication between processes.
+fork() – Creates child processes.
+dup2() – Redirects input and output using the pipe.
+execlp() – Executes the ls and grep commands.
+close() – Closes unused pipe ends.
+wait() – Makes the parent wait for the child processes.
+
+Working
+Create a pipe using pipe().
+Create the first child process using fork().
+Redirect the standard output of the first child to the pipe using dup2().
+Execute ls -l using execlp().
+Create the second child process using fork().
+Redirect the standard input of the second child from the pipe using dup2().
+Execute grep ".c" using execlp().
+The parent waits for both child processes to complete.
+The output displays the files containing .c.
+
