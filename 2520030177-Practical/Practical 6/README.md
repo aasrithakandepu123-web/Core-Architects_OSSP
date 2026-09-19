@@ -1,5 +1,3 @@
-# Operating Systems Practicals
-
 This repository contains three C programs related to Operating Systems.
 
 ## 1. Client-Server Communication Using FIFO
